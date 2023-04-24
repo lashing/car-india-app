@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Fetch using MySQL and Node.js</title>
+</head>
+<body style="font-family: Arial;">
+    <div class="table-data">
+        <h2>Top 10 Cars </h2>
+        <table border="1">
+        <tr>
+            <th>S.N</th>
+            <th>CarModel</th>
+            <th>CarMake</th>
+            <th>CarType</th>
+            <th>TopSeller</th>
+        </tr>
+        
+        <%
+        if(userData.length!=0){
+        var i=1;
+        userData.forEach(function(data){
+        %>
+        <tr>
+            <td><%=i; %></td>
+            <td><%=data.CarModel %></td>
+            <td><%=data.CarMake %></td>
+            <td><%=data.CarType %></td>
+            <td><%=data.TopSeller %></td>
+        </tr>
+        <%  i++; }) %>
+        <% } else{ %>
+            <tr>
+                <td colspan="7">No Data Found</td>
+            </tr>
+        <% } %>
+        </table>
+    </div>
+</body>
+</html>
