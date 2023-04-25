@@ -1,4 +1,4 @@
 #!/bin/bash
 
 cd /opt/backend-code/
-nohup npm start &
+npm start
