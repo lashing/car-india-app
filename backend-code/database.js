@@ -1,6 +1,6 @@
 var mysql = require('mysql');
 var conn = mysql.createConnection({
-  host: 'db-tier-rdsdbinstance-mafpgma1jqym.cbsacbp4qbu7.us-west-2.rds.amazonaws.com', // Replace with your host name
+  host: 'car-india-db-tier-rdsdbinstance-qsd5rzmxs2ny.cbsacbp4qbu7.us-west-2.rds.amazonaws.com', // Replace with your host name
   user: 'root',      // Replace with your database username
   password: 'Indiancar$12345',      // Replace with your database password
   database: 'cardb' // // Replace with your database Name
